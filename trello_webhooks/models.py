@@ -287,10 +287,10 @@ class CallbackEvent(models.Model):
         if url:
             content_type = self.resolve_content_type(url)
 
-        self.event_payload['action']\
-                          ['data']\
-                          ['attachment']\
-                          ['content_type'] = content_type
+            self.event_payload['action']\
+                            ['data']\
+                            ['attachment']\
+                            ['content_type'] = content_type
 
 
     def save(self, *args, **kwargs):
